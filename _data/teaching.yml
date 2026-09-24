@@ -1,0 +1,31 @@
+teaching:
+  - title: "Molecular Biology Methods — student tutor"
+    level: "Bachelor's"
+    place: "Heidelberg University"
+    dates: "2017 – 2020"
+    points: ["Tutoring & Lab Work"]
+
+  - title: "Introduction to Machine Learning for Biologists"
+    level: "Master's"
+    place: "Heidelberg University / DKFZ"
+    dates: "2024 – 2026"
+    points: ["Lectures & Exams"]
+
+  - title: "Prep course: Python and Bash"
+    level: "Master's"
+    place: "Heidelberg University / DKFZ"
+    dates: "2024 – 2026"
+    points: ["Lectures & Coding Exercises"]
+
+
+  - title: "Bioinformatics"
+    level: "General"
+    place: "Heidelberg University / DKFZ"
+    dates: ""
+    points: []
+
+  - title: "Reproducible Software Development"
+    level: "General"
+    place: "Heidelberg University / DKFZ"
+    dates: ""
+    points: []

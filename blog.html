@@ -1,0 +1,21 @@
+---
+layout: default
+title: Blog
+description: "Longer-form writing by Ferdinand Popp."
+permalink: /blog/
+---
+<section class="section">
+  <p class="section-label">// blog</p>
+  {% if site.blog and site.blog.size > 0 %}
+  <ul class="news-list">
+    {% for post in site.blog %}
+    <li>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %Y" }}</time>
+      <span><a href="{{ post.url | relative_url }}">{{ post.title }}</a></span>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="section-intro">Nothing posted yet — check back soon. Short updates in the meantime: <a href="{{ '/news/' | relative_url }}">news</a>.</p>
+  {% endif %}
+</section>

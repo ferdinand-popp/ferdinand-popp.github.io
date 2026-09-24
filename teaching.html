@@ -1,0 +1,50 @@
+---
+layout: default
+title: Teaching
+description: "Teaching by Ferdinand Popp — Heidelberg University / DKFZ."
+permalink: /teaching/
+---
+{% assign all_teaching = site.data.teaching.teaching %}
+{% assign courses = all_teaching | where_exp: "x", "x.level != 'General'" %}
+{% assign general = all_teaching | where_exp: "x", "x.level == 'General'" %}
+
+<section class="section">
+  <p class="section-label">// teaching</p>
+  {% for x in courses %}
+  <div class="cv-entry">
+    {% if x.dates and x.dates != "" %}<span class="cv-dates">{{ x.dates }}</span>{% endif %}
+    <div class="cv-title">
+      {{ x.title }}
+      {% if x.level %}<span class="pub-badge">{{ x.level }}</span>{% endif %}
+    </div>
+    <div class="cv-place">{{ x.place }}</div>
+    {% if x.points and x.points.size > 0 %}
+    <ul>{% for p in x.points %}<li>{{ p }}</li>{% endfor %}</ul>
+    {% endif %}
+    {% if x.links %}
+    <div class="pub-links">
+      {% for link in x.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+</section>
+
+<section class="section">
+  <p class="section-label">// general</p>
+  {% for x in general %}
+  <div class="cv-entry">
+    {% if x.dates and x.dates != "" %}<span class="cv-dates">{{ x.dates }}</span>{% endif %}
+    <div class="cv-title">{{ x.title }}</div>
+    <div class="cv-place">{{ x.place }}</div>
+    {% if x.points and x.points.size > 0 %}
+    <ul>{% for p in x.points %}<li>{{ p }}</li>{% endfor %}</ul>
+    {% endif %}
+    {% if x.links %}
+    <div class="pub-links">
+      {% for link in x.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+</section>

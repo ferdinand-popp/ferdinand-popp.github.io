@@ -1,0 +1,53 @@
+title: Ferdinand Popp
+tagline: PhD Candidate — Computational Cancer Biology & Machine Learning
+description: >-
+  Building machine learning methods on multi-omics and clinical data
+  to generate actionable insights for cancer patients. PhD candidate,
+  Applied Bioinformatics, German Cancer Research Center (DKFZ) & Heidelberg University.
+url: "https://ferdinand-popp.github.io"
+baseurl: ""
+
+author:
+  name: Ferdinand Popp
+  email: ferdinand.popp@proton.me
+  github: ferdinand-popp
+  linkedin: ferdinand-popp-a63b40125
+  scholar: j6cV3GsAAAAJ
+  group_url: "https://www.dkfz.de/en/applied-bioinformatics"
+  group_name: "Applied Bioinformatics, DKFZ"
+
+collections:
+  posts:
+    output: true
+    permalink: /news/:year/:month/:day/:title/
+  blog:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: blog
+    values:
+      layout: blog-post
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - LICENSE.txt
+  - Gemfile
+  - Gemfile.lock

@@ -1,0 +1,72 @@
+header:
+  location: "Heidelberg, Germany"
+  email: "ferdinand.popp@proton.me"
+
+education:
+  - degree: "International PhD Program, Applied Bioinformatics — Prof. Brors"
+    place: "German Cancer Research Center (DKFZ) & Heidelberg University"
+    dates: "Oct 2023 – Apr 2027"
+    points:
+      - "Helmholtz PhD Fellowship"
+      - "Predicting molecular alterations for 2,500+ INFORM cases from the Molecular Tumor Board and Liquid Biopsy cohorts"
+
+  - degree: "M.Sc. Molecular Biosciences, Major Cancer Biology — final grade: 1.2"
+    place: "DKFZ & Heidelberg University"
+    dates: "Oct 2019 – Jan 2023"
+    points:
+      - "Thesis (Prof. Brors, Prof. Jäger, Prof. Wiemann): graph machine learning for multi-omics and clinical data integration, grade 1.0"
+      - "Student speaker, Major Cancer Biology program"
+
+  - degree: "B.Sc. Biosciences — final grade: 1.4"
+    place: "Heidelberg University"
+    dates: "Oct 2016 – Oct 2019"
+    points:
+      - "Thesis (Prof. Grimm): engineered AAV capsid selection strategies for gene therapy, grade 1.0"
+
+experience:
+  - role: "Bioinformatics Research Assistant, Applied Tumor Immunity"
+    place: "Prof. Jäger — National Center for Tumor Diseases (NCT), Heidelberg"
+    dates: "Mar 2022 – Aug 2023"
+    points:
+      - "Analyzed multi-omics and clinical data from patient cohorts with graph machine learning; built an accessible platform integrating results with biomedical knowledge graphs"
+
+  - role: "Working Student Software Developer"
+    place: "Gotthardt Healthgroup AG, Heidelberg"
+    dates: "Jul 2018 – May 2022"
+    points:
+      - "Developed Python applications for digital health, plus internal reporting tools and websites"
+
+  - role: "Research Intern, Pattern Recognition & Digital Medicine"
+    place: "Dr. Hübschmann — HI-STEM, Heidelberg"
+    dates: "Oct – Dec 2021"
+    points:
+      - "Derived an expression-based prognostic signature for Acute Myeloid Leukemia relapse"
+
+  - role: "Inhouse Consulting Intern"
+    place: "Merck KGaA, Darmstadt"
+    dates: "Apr – Jul 2021"
+    points:
+      - "Delivered process and automation solutions across three global Healthcare client projects"
+
+earlier_experience:
+  - "Research Intern, Applied Bioinformatics, Prof. Brors, DKFZ (2020–2021)"
+  - "Digital Accelerator Intern, Qiagen N.V. (2019)"
+  - "Student Tutor, Molecular Biology, Heidelberg University (2017–2020)"
+
+skills:
+  - category: "Programming"
+    items: "Python, R, Bash"
+  - category: "Machine Learning"
+    items: "PyTorch, scikit-learn, graph ML, multi-omics modeling"
+  - category: "Infrastructure"
+    items: "HPC, Snakemake, Microsoft Office"
+  - category: "Domain"
+    items: "Multi-omics analysis, biomedical knowledge graphs"
+
+languages:
+  - "English (professional)"
+  - "German (native)"
+
+interests:
+  - "Beach volleyball"
+  - "Hackathons"

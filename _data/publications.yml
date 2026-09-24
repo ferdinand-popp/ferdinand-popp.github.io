@@ -1,0 +1,112 @@
+# Publications. Order is manual (not strictly by date) — first 4 entries are
+# featured on /publications/, the rest render under "Other publications".
+# authors: list of {name, self}; self:true gets underlined (your own name).
+# url: primary link the title points to. links: extra resources (e.g. code).
+
+- title: "TelomereHunter2: improved in silico telomere analysis software for precision oncology and single-cell studies"
+  authors:
+    - { name: "F Popp", self: true }
+    - { name: "N Biondi" }
+    - { name: "U Pogorevčnik" }
+    - { name: "N Abad" }
+    - { name: "C Hong" }
+    - { name: "Y Pageaud" }
+    - { name: "B Brors" }
+    - { name: "et al." }
+  venue: "Bioinformatics Advances"
+  citation: "6(1), vbag187"
+  year: 2026
+  url: "https://doi.org/10.1093/bioadv/vbag187"
+  links:
+    - label: "Code"
+      url: "https://github.com/ferdinand-popp/telomerehunter2"
+
+- title: "Graph machine learning for integrated multi-omics analysis: genetics and genomics"
+  authors:
+    - { name: "NA Valous" }
+    - { name: "F Popp", self: true }
+    - { name: "I Zörnig" }
+    - { name: "D Jäger" }
+    - { name: "P Charoentong" }
+  venue: "British Journal of Cancer"
+  citation: "131(2), 205–211"
+  year: 2024
+  url: "https://doi.org/10.1038/s41416-024-02706-7"
+  links: []
+
+- title: "Democratizing knowledge representation with BioCypher"
+  authors:
+    - { name: "S Lobentanzer" }
+    - { name: "P Aloy" }
+    - { name: "J Baumbach" }
+    - { name: "B Bohar" }
+    - { name: "VJ Carey" }
+    - { name: "P Charoentong" }
+    - { name: "et al." }
+  venue: "Nature Biotechnology"
+  citation: "41(8), 1056–1059"
+  year: 2023
+  url: "https://doi.org/10.1038/s41587-023-01848-y"
+  note: "Implemented for NCT Heidelberg"
+  links: []
+
+- title: "Profiling telomere content and composition at single-cell resolution in cancer and immune cells"
+  authors:
+    - { name: "NL Engel" }
+    - { name: "H Frieß" }
+    - { name: "J Grigorjew" }
+    - { name: "F Popp", self: true }
+    - { name: "L Herzel" }
+    - { name: "B Özay" }
+    - { name: "J Surmely" }
+    - { name: "et al." }
+  venue: "bioRxiv"
+  citation: "preprint"
+  year: 2024
+  url: "https://doi.org/10.1101/2024.08.28.609339"
+  links: []
+
+- title: "Protocol for natural and biomedical image processing in the hypercomplex domain using the 2D orthogonal planes split"
+  authors:
+    - { name: "NA Valous" }
+    - { name: "E Hitzer" }
+    - { name: "D Duşe" }
+    - { name: "RR Moraleda" }
+    - { name: "F Popp", self: true }
+    - { name: "M Suarez-Carmona" }
+    - { name: "et al." }
+  venue: "STAR Protocols"
+  citation: "7(2)"
+  year: 2026
+  url: "https://doi.org/10.1016/j.xpro.2026.104548"
+  links: []
+
+- title: "Genome-wide cfDNA profiling from whole blood reveals molecular risk and potential for early detection in neuroblastoma"
+  authors:
+    - { name: "SF Zabel" }
+    - { name: "M Eggle" }
+    - { name: "S Volz" }
+    - { name: "A Mayakonda" }
+    - { name: "S Stainczyk" }
+    - { name: "F Popp", self: true }
+    - { name: "et al." }
+  venue: "Klinische Pädiatrie"
+  citation: "238(03)"
+  year: 2026
+  # No stable DOI found for this abstract yet — add one via `url:` once available.
+  links: []
+
+- title: "Computational workflows for natural and biomedical image processing based on hypercomplex algebras"
+  authors:
+    - { name: "NA Valous" }
+    - { name: "E Hitzer" }
+    - { name: "D Duşe" }
+    - { name: "RR Moraleda" }
+    - { name: "F Popp", self: true }
+    - { name: "M Suarez-Carmona" }
+    - { name: "et al." }
+  venue: "Patterns"
+  citation: "6(11)"
+  year: 2025
+  url: "https://doi.org/10.1016/j.patter.2025.101388"
+  links: []

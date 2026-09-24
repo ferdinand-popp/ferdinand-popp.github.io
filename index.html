@@ -1,49 +1,38 @@
-<!DOCTYPE HTML>
-<!--
-	Aerial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Ferdinand Popp</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-loading">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
+---
+layout: default
+title: About
+description: "Ferdinand Popp — PhD candidate in computational cancer biology & machine learning at DKFZ / Heidelberg University."
+---
+<section class="hero section">
+  <img class="avatar" src="{{ '/images/Quadrat.jpg' | relative_url }}" alt="Ferdinand Popp" width="84" height="84">
+  <h1>Ferdinand Popp</h1>
+  <p class="tagline">PhD Candidate — Computational Cancer Biology &amp; Machine Learning</p>
+  <p>
+    Building machine learning methods on multi-omics and clinical data to generate
+    actionable insights for cancer patients. I'm part of the
+    <a href="{{ site.author.group_url }}">Applied Bioinformatics division</a>
+    (Prof. Benedikt Brors) at the German Cancer Research Center (DKFZ) and Heidelberg
+    University, working on graph machine learning, telomere biology, and knowledge
+    representation for precision oncology.
+  </p>
+  <p class="affil">
+    <a href="{{ site.author.group_url }}">dkfz.de/en/applied-bioinformatics</a> ·
+    <a href="{{ '/cv/' | relative_url }}">cv</a> ·
+    <a href="{{ '/publications/' | relative_url }}">publications</a> ·
+    <a href="{{ '/projects/' | relative_url }}">projects</a>
+  </p>
+</section>
 
-				<!-- Header -->
-					<header id="header">
-						<span class="avatar"><img src="images/Quadrat.jpg" width="122" height="122" /></span>
-						<h1>Ferdinand Popp</h1>
-						<p>PhD Student @ DKFZ &nbsp;&bull;&nbsp; Cancer Biology and Data Science &nbsp;&bull;&nbsp; Tech enthusiast</p>
-						    <hr width="30%" color="white">
-
-						<nav>
-							<ul>
-								<li><a href="mailto: ferdinand.popp@proton.me" class="icon solid fa-envelope"><span class="label">Mail</span></a></li>
-								<li><a href="https://github.com/ferdinand-popp" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<li><a href="https://www.linkedin.com/in/ferdinand-popp-a63b40125/" class="icon brands fa-linkedin"><span class="label">Linked-In</span></a></li>
-								<li><a href="https://scholar.google.com/citations?user=j6cV3GsAAAAJ" class=" icon solid fa-newspaper"><span class="label">Publications</span></a></li>
-							</ul>
-						</nav>
-					</header>
-
-			     <!-- Footer -->
-                    <footer id="footer">
-                        <ul class="copyright">
-                            <li><a href="https://github.com/ferdinand-popp/ferdinandpopp.github.io">See source code</a> &nbsp;&bull;&nbsp;  Original Design: <a href="http://html5up.net">HTML5 UP</li>
-                        </ul>
-                    </footer>
-			</div>
-		</div>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-            <script src="assets/js/main.js"></script>
-	</body>
-</html>
+<section class="section">
+  <p class="section-label">// news</p>
+  <div class="news-preview">
+    <ul>
+      {% for post in site.posts limit:4 %}
+      <li>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %Y" }}</time>
+        <span><a href="{{ post.url | relative_url }}">{{ post.title }}</a></span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

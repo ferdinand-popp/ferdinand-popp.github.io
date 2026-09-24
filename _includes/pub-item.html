@@ -1,0 +1,14 @@
+<li class="pub-item">
+  <div class="pub-title">{% if include.pub.url %}<a href="{{ include.pub.url }}">{{ include.pub.title }}</a>{% else %}{{ include.pub.title }}{% endif %}</div>
+  <div class="pub-meta">
+    {% for a in include.pub.authors %}{% if a.self %}<span class="author-self">{{ a.name }}</span>{% else %}{{ a.name }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}<br>
+    <span class="pub-venue">{{ include.pub.venue }}</span>{% if include.pub.citation and include.pub.citation != "" %}, {{ include.pub.citation }}{% endif %} ·
+    <span class="pub-year">{{ include.pub.year }}</span>
+  </div>
+  {% if include.pub.note %}<div class="pub-note">{{ include.pub.note }}</div>{% endif %}
+  {% if include.pub.links and include.pub.links.size > 0 %}
+  <div class="pub-links">
+    {% for link in include.pub.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}
+  </div>
+  {% endif %}
+</li>

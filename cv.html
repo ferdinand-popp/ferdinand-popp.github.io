@@ -1,0 +1,64 @@
+---
+layout: default
+title: CV
+description: "CV of Ferdinand Popp — education, experience, skills."
+permalink: /cv/
+---
+{% assign cv = site.data.cv %}
+<section class="section">
+  <p class="section-label">// cv</p>
+  <p class="cv-header">
+    <span><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}/">linkedin</a></span>
+    <span>{{ cv.header.location }}</span>
+    <span><a href="mailto:{{ cv.header.email }}">{{ cv.header.email }}</a></span>
+  </p>
+
+  <h2>Education</h2>
+  {% for e in cv.education %}
+  <div class="cv-entry">
+    <span class="cv-dates">{{ e.dates }}</span>
+    <div class="cv-title">{{ e.degree }}</div>
+    <div class="cv-place">{{ e.place }}</div>
+    {% if e.points %}
+    <ul>{% for p in e.points %}<li>{{ p }}</li>{% endfor %}</ul>
+    {% endif %}
+  </div>
+  {% endfor %}
+</section>
+
+<section class="section">
+  <h2>Experience</h2>
+  {% for x in cv.experience %}
+  <div class="cv-entry">
+    <span class="cv-dates">{{ x.dates }}</span>
+    <div class="cv-title">{{ x.role }}</div>
+    <div class="cv-place">{{ x.place }}</div>
+    {% if x.points %}
+    <ul>{% for p in x.points %}<li>{{ p }}</li>{% endfor %}</ul>
+    {% endif %}
+  </div>
+  {% endfor %}
+  <div class="cv-earlier">
+    {% for line in cv.earlier_experience %}{{ line }}{% unless forloop.last %} · {% endunless %}{% endfor %}
+  </div>
+</section>
+
+<section class="section">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    {% for s in cv.skills %}
+    <div class="skill-row">
+      <div class="skill-cat">{{ s.category }}</div>
+      <div class="skill-items">{{ s.items }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section">
+  <h2>Languages &amp; Interests</h2>
+  <p class="section-intro">
+    {{ cv.languages | join: " · " }}<br>
+    {{ cv.interests | join: " · " }}
+  </p>
+</section>

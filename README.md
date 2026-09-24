@@ -1,15 +1,46 @@
 # Personal Webpage
 
-The repository holds the code used on my mini-website  
-[ferdinand-popp.github.io/](https://ferdinand-popp.github.io/).
+Source for [ferdinand-popp.github.io](https://ferdinand-popp.github.io/).
 
-Code is released under a [Creative Commons Attribution-ShareAlike 3.0 International License](http://creativecommons.org/licenses/by/3.0/).
+Built with [Jekyll](https://jekyllrb.com/), using only plugins whitelisted by
+GitHub Pages (`jekyll-feed`, `jekyll-seo-tag`, `jekyll-sitemap`), so it builds
+automatically on push — no CI step required.
 
-Site theme based on Aerial by HTML5 UP: 
-> html5up.net | @ajlkn
- 
-> Free for personal and commercial use under the
-> [CCA 3.0 license](http://html5up.net/license)
+## Structure
 
-Icons by [Font Awesome](http://fortawesome.github.com/Font-Awesome)
-Pictures by [Unsplash](https://unsplash.com/)
+- `_config.yml` — site settings (title, author, social links)
+- `_data/publications.yml` — publication list (shown on `/publications/`)
+- `_data/projects.yml` — project list (shown on `/projects/`)
+- `_data/cv.yml` — CV content (shown on `/cv/`)
+- `_data/teaching.yml` — talks, posters, and teaching (shown on `/teaching/`)
+- `_posts/` — news items (shown on `/news/` and the homepage)
+- `_blog/` — longer-form posts (shown on `/blog/`); create the folder and add
+  `YYYY-MM-DD-slug.md` files with `title:` front matter the same way as `_posts/`
+- `_layouts/`, `_includes/` — page templates
+- `assets/css/style.css` — theme
+
+## Local preview
+
+Requires Ruby + Bundler:
+
+```
+bundle install
+bundle exec jekyll serve
+```
+
+Then open `http://localhost:4000`.
+
+## Editing content
+
+- New publication → add an entry to `_data/publications.yml`
+- New project → add an entry to `_data/projects.yml`
+- New news item → add a Markdown file to `_posts/` named `YYYY-MM-DD-slug.md`
+  with `title:` front matter
+- New blog post → same, but in `_blog/`
+- CV changes → edit `_data/cv.yml`
+- Teaching/talks changes → edit `_data/teaching.yml`
+
+## Credits
+
+Icons by [Font Awesome](https://fontawesome.com/). Code released under a
+[Creative Commons Attribution-ShareAlike 3.0 International License](http://creativecommons.org/licenses/by/3.0/).
