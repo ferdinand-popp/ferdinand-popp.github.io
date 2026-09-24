@@ -19,7 +19,7 @@ description: "Ferdinand Popp — PhD candidate in computational cancer biology &
     <a href="{{ site.author.group_url }}">dkfz.de/en/applied-bioinformatics</a> ·
     <a href="{{ '/cv/' | relative_url }}">cv</a> ·
     <a href="{{ '/publications/' | relative_url }}">publications</a> ·
-    <a href="{{ '/projects/' | relative_url }}">projects</a>
+    <a href="https://github.com/{{ site.author.github }}">projects on GitHub</a>
   </p>
 </section>
 
@@ -27,7 +27,7 @@ description: "Ferdinand Popp — PhD candidate in computational cancer biology &
   <p class="section-label">// news</p>
   <div class="news-preview">
     <ul>
-      {% for post in site.posts limit:4 %}
+      {% for post in site.posts %}
       <li>
         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %Y" }}</time>
         <span><a href="{{ post.url | relative_url }}">{{ post.title }}</a></span>

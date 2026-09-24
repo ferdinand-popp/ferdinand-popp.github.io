@@ -278,35 +278,6 @@ pre {
 .pub-links a { margin-right: 0.9rem; }
 .pub-note { font-size: 0.85rem; color: var(--text-faint); font-style: italic; margin-top: 0.2rem; }
 
-/* ---- projects ---- */
-
-.project-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
-.project-card {
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--bg-alt);
-  padding: 1.1rem 1.3rem;
-  transition: border-color 0.15s ease;
-}
-.project-card:hover { border-color: var(--accent-dim); }
-.project-card h3 { margin: 0 0 0.35rem; }
-.project-card h3 a { color: #eef2f4; }
-.project-card h3 a:hover { color: var(--accent); text-decoration: none; }
-.project-tagline { color: var(--text-muted); font-size: 0.92rem; margin: 0 0 0.6rem; }
-.project-meta {
-  font-family: var(--mono);
-  font-size: 0.78rem;
-  color: var(--text-faint);
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-.project-lang:before { content: "● "; color: var(--accent); }
-
 /* ---- CV ---- */
 
 .cv-header {

@@ -10,10 +10,10 @@ automatically on push — no CI step required.
 
 - `_config.yml` — site settings (title, author, social links)
 - `_data/publications.yml` — publication list (shown on `/publications/`)
-- `_data/projects.yml` — project list (shown on `/projects/`)
 - `_data/cv.yml` — CV content (shown on `/cv/`)
 - `_data/teaching.yml` — talks, posters, and teaching (shown on `/teaching/`)
-- `_posts/` — news items (shown on `/news/` and the homepage)
+- `_posts/` — news items (shown on the homepage). Projects live entirely on
+  GitHub — the nav and homepage link straight there instead of a local page.
 - `_blog/` — longer-form posts (shown on `/blog/`); create the folder and add
   `YYYY-MM-DD-slug.md` files with `title:` front matter the same way as `_posts/`
 - `_layouts/`, `_includes/` — page templates
@@ -33,7 +33,6 @@ Then open `http://localhost:4000`.
 ## Editing content
 
 - New publication → add an entry to `_data/publications.yml`
-- New project → add an entry to `_data/projects.yml`
 - New news item → add a Markdown file to `_posts/` named `YYYY-MM-DD-slug.md`
   with `title:` front matter
 - New blog post → same, but in `_blog/`

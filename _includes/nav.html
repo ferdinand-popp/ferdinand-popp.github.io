@@ -5,9 +5,8 @@
       <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>about</a>
       <a href="{{ '/publications/' | relative_url }}"{% if page.url == '/publications/' %} class="active"{% endif %}>publications</a>
       <a href="{{ '/teaching/' | relative_url }}"{% if page.url == '/teaching/' %} class="active"{% endif %}>teaching</a>
-      <a href="{{ '/projects/' | relative_url }}"{% if page.url == '/projects/' %} class="active"{% endif %}>projects</a>
+      <a href="https://github.com/{{ site.author.github }}">projects</a>
       <a href="{{ '/cv/' | relative_url }}"{% if page.url == '/cv/' %} class="active"{% endif %}>cv</a>
-      <a href="{{ '/news/' | relative_url }}"{% if page.url == '/news/' %} class="active"{% endif %}>news</a>
       <a href="{{ '/blog/' | relative_url }}"{% if page.url == '/blog/' %} class="active"{% endif %}>blog</a>
     </nav>
   </div>
